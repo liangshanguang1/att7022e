@@ -86,6 +86,16 @@ extern u8 Read_Exter_meter_Outtime_flag;	//读取外部电表超时标志
 extern u8 Read_Exter_meter_Outtime_count;	//读取外部电表超时次数计数
 
 extern u8 first_Read_Exter_meter_flag;			//上电第一次读外部电表的标志
+typedef struct
+{
+  u32 VolA;           
+  u32 VolB;  
+  u32 VolC;
+  u32 CurrA;           
+  u32 CurrB;  
+  u32 CurrC; 
+                                      
+}DIANBIAOTypeDef;
 
 void SPI_GPIO_Config(void);
 u32 READ_Att7022(u8 Address);

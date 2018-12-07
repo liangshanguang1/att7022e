@@ -7,16 +7,6 @@ u32 CurrentElectric;				//×ÜµçÁ¿
 //u32 CurrentElectricA;
 //u32 CurrentElectricB;
 //u32 CurrentElectricC;
-typedef struct
-{
-  u32 VolA;           
-  u32 VolB;  
-  u32 VolC;
-  u32 CurrA;           
-  u32 CurrB;  
-  u32 CurrC; 
-                                      
-}DIANBIAOTypeDef;
 DIANBIAOTypeDef dianbiao;
  extern u32 diaobiao [4];
  #define HFCONST   369//((2.592 * ATT_G * ATT_G*10000*INATTV*INATTI)/(EC*UI*VI)) 
