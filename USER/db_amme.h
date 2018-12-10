@@ -96,13 +96,22 @@ typedef struct
   u32 CurrC; 
                                       
 }DIANBIAOTypeDef;
-
+typedef struct
+{
+   float  Curr	;
+   float  Vol   ;
+   float  Pt	;
+   float  Qt    ;
+   float  Pft   ;
+   float  Ept   ;
+   float  Freq  ;
+	
+}Update;
 void SPI_GPIO_Config(void);
 u32 READ_Att7022(u8 Address);
 void Write_Att7022(u8 address, u32 write_data);
 void EMU_init(void);
 void InitAmmeter(void);
 void ReadAmmeterData(void);
-
 void Read_external_meter(void);							//读取外部电表数据
 #endif
